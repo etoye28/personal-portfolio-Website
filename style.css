@@ -116,12 +116,15 @@ nav ul li a:hover {
   transform: scale(1.1);
   box-shadow: 0 0 15px rgba(179, 123, 0, 0.6);
 }
-/* ===== Responsive Styles ===== */
 
+/* ===== Responsive Styles ===== */
 /* Tablets (768px and below) */
+
 @media (max-width: 768px) {
   nav ul {
-    gap: 30px;
+    gap: 50px;
+    justify-content: center;
+    margin: 20px 0 0 0;
   }
 
   .hero {
@@ -152,12 +155,15 @@ nav ul li a:hover {
   .social-icons{
     justify-content: center;
   }
+   .page-content {
+      min-height: calc(100vh - 70px);   /* adjust for header height */
+    }
 }
 
 /* Mobile Phones (480px and below) */
 @media (max-width: 480px) {
   header {
-    padding: 10px 5%; /* smaller padding */
+    padding-top:10px; /* smaller padding */
   }
 
   nav ul {
@@ -200,14 +206,30 @@ nav ul li a:hover {
   .social-icons {
     justify-content: center;
   }
+ .page-content {
+    padding: 60px 5%;                 /* reduce top padding */
+    margin: 0;
+    min-height: calc(100vh - 60px);   /* full screen minus navbar height */
+    }
 }
-
 /* ---------- Page Styles for About, Skills, Contact ---------- */
+/*
 .page-content {
   padding: 200px 10%;
   min-height: 100vh;
   background: linear-gradient(to right, #f3e8ff, #ac8fee);
   text-align: center;
+}
+*/
+.page-content {
+  min-height: 100vh;           /* full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;      /* vertically center content */
+  align-items: center;          /* optional: center horizontally */
+  text-align: center;
+  padding: 0 10%;               /* only horizontal padding */
+  background: linear-gradient(to right, #f3e8ff, #ac8fee);
 }
 
 .page-content h1 {
