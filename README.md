@@ -6,6 +6,7 @@ Hi, I'm Etsub! This is my personal portfolio website showcasing my projects, ski
 - Responsive Hero section with typewriter effect
 - About Me section
 - Skills list
+- Projects section
 - Contact section
 - Social media links
 
